@@ -20,53 +20,44 @@
 
   <main>
     <section class="hero">
-      <div class="hero-image">
-        <img src="hero.jpg" alt="Camille Bonin-Di Sera">
-      </div>
       <div class="hero-content">
-        <h1>Développeuse <br> Web Designer <br> graphiste</h1>
+        <h1>Développeuse <br> Web Designer <br> Graphiste</h1>
         <p>J'apporte des solutions innovantes à vos problèmes</p>
         <p>Je m'appelle Camille Bonin-Di Sera, je suis une personne créative touche-à-tout qui aime concevoir de nouvelles choses et explorer divers domaines.</p>
         <div class="button-group">
-          <a href="#" class="button">CONTACT</a>
-          <a href="#" class="button">VOIR PROJETS</a>
+          <a href="#" class="contact-button">CONTACT</a>
+          <a href="#" class="projects-button">VOIR PROJETS</a>
         </div>
+      </div>
+      <div class="hero-image">
+        <img src="./picture/a-3d-rendering-of-a-1930s-cartoon-style-scene-feat-6yQ12p81QpyKOU3BMFSqag-yJpYII-4Sw2DzuZtAFb4rg.jpeg" alt="Camille Bonin-Di Sera">
       </div>
     </section>
 
     <section class="portfolio" id="portfolio">
       <h2>PORTFOLIO</h2>
-      <nav class="portfolio-nav">
-        <a href="#site-web" class="active">Site Web</a>
-        <a href="#logos">Logos</a>
-        <a href="#applications">Applications</a>
+      <nav class="tab-nav">
+        <button class="tab-link active" onclick="openTab(event, 'site-web')">Site Web</button>
+        <button class="tab-link" onclick="openTab(event, 'logos')">Logos</button>
+        <button class="tab-link" onclick="openTab(event, 'applications')">Applications</button>
       </nav>
-      <div class="portfolio-grid">
-        <div class="project">
-          <img src="project1.jpg" alt="Projet 1">
-          <div class="project-info">
-            <h3>Projet 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt dolor et lectus hendrerit interdum. Maecenas vel sapien quis libero ornare dictum.</p>
-            <a href="#" class="button">VOIR LE PROJET</a>
-          </div>
-        </div>
-        <div class="project">
-          <img src="project2.jpg" alt="Projet 2">
-          <div class="project-info">
-            <h3>Projet 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt dolor et lectus hendrerit interdum. Maecenas vel sapien quis libero ornare dictum.</p>
-            <a href="#" class="button">CONTACT</a>
-          </div>
-        </div>
-        <div class="project">
-          <img src="project3.jpg" alt="Projet 3">
-          <div class="project-info">
-            <h3>Projet 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt dolor et lectus hendrerit interdum. Maecenas vel sapien quis libero ornare dictum.</p>
-            <a href="#" class="button">CONTACT</a>
-          </div>
-        </div>
-      </div>
+      <div id="site-web" class="tab-content" style="display: block;">
+        <h2>Projets de site web</h2>
+        <p>Voici quelques projets de développement web.</p>
+        <!-- Ajoute ici les projets liés aux sites web -->
+    </div>
+
+    <div id="logos" class="tab-content">
+        <h2>Projets de logos</h2>
+        <p>Voici quelques projets de conception de logos.</p>
+        <!-- Ajoute ici les projets liés aux logos -->
+    </div>
+
+    <div id="applications" class="tab-content">
+        <h2>Projets d'applications</h2>
+        <p>Voici quelques projets d'applications que j'ai développées.</p>
+        <!-- Ajoute ici les projets liés aux applications -->
+    </div>
     </section>
 
     <section class="services" id="services">
@@ -86,3 +77,5 @@
           <img src="graphic-design.svg" alt="Graphisme">
           <h3>Graphisme</h3>
           <p>En tant que graphiste enthousiaste et créative, j'adore concevoir des logos. Je serais ravie de vous accompagner dans la création de votre identité visuelle.</p>
+          <script src="script.js"></script>
+        </body>
