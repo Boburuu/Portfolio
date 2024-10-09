@@ -27,9 +27,10 @@ h2 {
 
 
 .contact-button {
+  color: white;
   background-color: var(--secondary-color);
   padding: 10px 20px;
-  border: solid 2px var(--primary-color);
+  border: solid 2px var(--secondary-color);
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -104,6 +105,10 @@ header nav a:hover {
   color: #ccc;
 }
 
+#logo{
+  width: 5%;
+  height: 10%;
+}
 /* Responsive Navbar */
 
 @media (max-width: 768px) {
@@ -393,4 +398,180 @@ section {
 
 .service-card p {
   margin-bottom: 20px;
+}
+
+/* Section "A propos" */
+.freelance-life {
+  background-color: #1a1a2e;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.freelance-life .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.freelance-life h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.freelance-life .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.freelance-life .image {
+  flex: 1;
+}
+
+.freelance-life .image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.freelance-life .text {
+  flex: 2;
+  margin-left: 40px;
+}
+
+.freelance-life .text h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.freelance-life .text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.freelance-life .btn {
+  background-color: #f04545;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Section Contact */
+.start-project {
+ 
+  padding: 50px 0;
+  color: #fff;
+  position: relative;
+}
+
+.start-project::before {
+  background-image: url("./picture/bg-contact.jpeg");
+  filter: grayscale(100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+}
+
+.start-project .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.start-project h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.project-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: transparent;
+}
+
+.contact-form {
+  flex: 1;
+  background-color: var(--secondary-color);
+  padding: 42px 84px;
+  border-radius: 30px 0 0 30px;
+  color: white;
+}
+
+.contact-form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: #333; 
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999;
+}
+
+.send-button {
+  color: white;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: solid 2px white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+.contact-info {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 42px 24px;
+  border-radius: 0 30px 30px 0;
+  color: #333;
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-info strong {
+  color: #F44620;
 }
